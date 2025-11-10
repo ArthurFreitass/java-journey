@@ -1,4 +1,4 @@
-package dev.java.introducao;
+package dev.introducao;
 
 public class SecondClass {
     /**

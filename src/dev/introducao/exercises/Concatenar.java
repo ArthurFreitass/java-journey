@@ -1,6 +1,6 @@
-package dev.java.introducao;
+package dev.introducao.exercises;
 
-public class FourClassExercise {
+public class Concatenar {
     public static void main(String[] args) {
         /*Prática:
 
