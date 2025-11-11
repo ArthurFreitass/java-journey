@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class DescontoProduto {
+
+    /**
+     * Receba o valor de um produto e mostre o preço com 10% de desconto e com 15% de acréscimo.
+     * @param args
+     */
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("================");
+        System.out.println("LOJA - DESCONTOS");
+        System.out.println("================");
+
+        System.out.println("Digite o valor do produto: R$");
+        double product = sc.nextDouble();
+
+        System.out.println();
+
+        double discount = product - product * 10 / 100;
+        double increase = product + product * 15 / 100;
+
+        System.out.println("O valor do produto com 10% de desconto é: " + discount);
+        System.out.println("O valor do produto com 15% de acréscimo é: " + increase);
+    }
+}
