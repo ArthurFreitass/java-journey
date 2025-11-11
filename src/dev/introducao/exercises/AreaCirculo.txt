@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class AreaCirculo {
+    public static void main(String[] args) {
+
+        /**
+         * Leia o raio de um círculo e calcule sua área e seu perímetro.
+         */
+
+        float raio;
+
+        System.out.println("==================");
+        System.out.println("ÁREA DE UM CÍRCULO");
+        System.out.println("==================");
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o raio de um círculo: ");
+        raio = sc.nextFloat();
+
+        double areaCircle = (double) 3.14 * (raio * raio);
+
+        System.out.println("A área do círculo é de: "+ areaCircle);
+    }
+}
