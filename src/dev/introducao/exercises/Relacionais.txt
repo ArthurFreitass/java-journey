@@ -1,0 +1,91 @@
+import java.util.Scanner;
+
+public class Relacionais {
+    /**
+     *  Operadores Relacionais
+     * 1 Peça dois números inteiros e mostre se o primeiro é maior, menor ou igual ao segundo.
+     * 2 Solicite a idade de uma pessoa e informe se ela é maior de idade (18 anos ou mais).
+     * 3 Peça dois números e verifique se o primeiro é múltiplo do segundo.
+     */
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Parte 1
+
+        System.out.println("Parte 1");
+        System.out.println("====================");
+        System.out.println("QUAL NUMERO E MAIOR?");
+        System.out.println("====================");
+
+        System.out.println("Digite um numero:");
+        int num1 = sc.nextInt();
+
+        System.out.println("Digite outro numero:");
+        int num2 = sc.nextInt();
+
+        boolean isMoreNumber = num1 > num2;
+
+        if (isMoreNumber == true) {
+            System.out.println("Primeiro numero é o maior");
+        } else if (num1 == num2) {
+            System.out.println("Os numeros sao iguais");
+        } else {
+            System.out.println("O segundo numero é o maior");
+        }
+
+
+        // Parte 2
+
+        System.out.println("\n");
+
+        /**
+         * 2 Solicite a idade de uma pessoa e informe se ela é maior de idade (18 anos ou mais).
+         */
+
+        System.out.println("Parte 2");
+        System.out.println("====================");
+        System.out.println("MAIORIDADE");
+        System.out.println("====================");
+
+        System.out.println("Digite sua idade:");
+        int age = sc.nextInt();
+
+        boolean result;
+
+        if (age < 18) {
+            result = false;
+        } else {
+            result = true;
+        }
+
+        System.out.println("Você é maior de idade? "+ result
+        );
+
+        // Parte 3
+
+        /**
+         * 3 Peça dois números e verifique se o primeiro é múltiplo do segundo.
+         */
+
+        System.out.println("Parte 3");
+        System.out.println("====================");
+        System.out.println("MULTIPLOS");
+        System.out.println("====================");
+
+        System.out.println("Digite um número:");
+        int multi1 = sc.nextInt();
+        System.out.println("Digite outro número:");
+        int multi2 = sc.nextInt();
+
+        boolean resultMult;
+
+        if (multi1 % multi2 == 0) {
+            resultMult = true;
+        } else {
+            resultMult = false;
+        }
+
+        System.out.println("Os numeros sao multiplos? "+ resultMult);
+    }
+}
