@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+import java.util.Scanner;
+public class TripleNumber {
+
+    public static void main(String[] args) {
+        /**
+         * Peça ao usuário um número e mostre o dobro, o triplo e a metade desse número.
+         */
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("T R I P L O  -  NUMERO");
+        System.out.println("======================");
+        System.out.println("Digite um numero:");
+
+        float num = sc.nextFloat();
+        sc.close();
+
+        double tripleNumber = num * 3;
+
+        System.out.println("RESULTADOS:");
+        System.out.println(tripleNumber);
+
+    }
+}
