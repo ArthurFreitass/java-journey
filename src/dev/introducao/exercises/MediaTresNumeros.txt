@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class MediaTresNumeros {
+    public static void main(String[] args) {
+        /**
+         * Calcule a média aritmética entre três notas informadas pelo usuário.
+         */
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("ESCOLA - MÉDIA ALUNOS");
+        System.out.println("Digite a sua nota de Matematica:");
+
+        double test1 = sc.nextDouble();
+
+        System.out.println();
+
+        System.out.println("Digite a sua nota de Portugues:");
+        double test2 = sc.nextDouble();
+
+        System.out.println();
+
+        System.out.println("Digite a sua nota de Fisica :");
+        double test3 = sc.nextDouble();
+
+        float average = (float) (test1 + test2 + test3) / 3;
+
+
+        System.out.println("\n"+average);
+    }
+
+}
