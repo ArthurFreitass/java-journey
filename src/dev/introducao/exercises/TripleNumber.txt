@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 import java.util.Scanner;
-public class TripleNumber {
+public class TriploDeNumero {
 
     public static void main(String[] args) {
         /**
