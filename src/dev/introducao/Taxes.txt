@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class TaxaHolanda {
+    public static void main(String[] args) {
+        double salary, taxeSalary;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("----------------");
+        System.out.println("IMPOSTO DE RENDA");
+        System.out.println("----------------");
+
+        System.out.println("Digite aqui seu salario anual: ");
+        salary = sc.nextDouble();
+
+        try {
+            if (salary < 0) {
+                throw new IllegalArgumentException("Digite um salario válido.");
+            }
+            if (salary <= 34712) {
+                taxeSalary = salary * 9.7 / 100;
+            } else if (salary <= 68507) {
+                taxeSalary = salary * 37.35 / 100;
+            } else {
+                taxeSalary = salary * 49.50 / 100;
+            }
+
+            String message = "O imposto a ser pago em euros e de: " + taxeSalary;
+
+            System.out.println("RESULTADOS");
+            System.out.println("----------");
+
+            // Saída
+            System.out.println(message);
+        } catch (Exception error) {
+            System.out.println(error);
+        }
+    }
+}
